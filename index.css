@@ -38,12 +38,12 @@ body {
 
 .outerclock {
   justify-content: space-evenly;
-  margin: 20vh auto 0; /* <-- centers clock | Left <--> Right */
+  margin: 25vh auto 0; /* <-- centers clock  Left <--> Right */
 /*   background: var(--ch-light-purple); */
   background: var(--ch-grey);
 /*   background: var(--ch-white-two); */
   padding: 1.5rem 1.5rem;
-  max-width: calc(30% + 200px);
+  width: max(calc(30% + 200px), 700px);
 
 }
 
@@ -58,14 +58,15 @@ body {
 
 .clockface {
   font-size: 3rem;
+  white-space: nowrap;
 }
 .onOff {
   color: var(--ch-black);
 }
 
 .screw {
-  height: 90px;
-  width: 90px;
+  min-height: 90px;
+  min-width: 90px;
   margin: 0 1rem;
   background-image: url("power-button.png");
   background-color: var(--ch-green);
