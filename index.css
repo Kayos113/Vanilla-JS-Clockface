@@ -82,10 +82,29 @@ body {
 }
 
 .attr {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
   position: absolute;
   text-align: center;
   width: 99%;
   bottom: 10px;
+  font-size: 0.5rem;
+}
+
+.attr-container {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 1rem;
+}
+.attr-container:last-of-type {
+  margin-bottom: 0;
+}
+.attr-container>a {
+  text-decoration: none;
 }
 
 #control {
