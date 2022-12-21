@@ -1,10 +1,12 @@
 let clock = document.getElementById("time");/* $("#time"); */
 let control = document.getElementById("control");/* $("#control"); */
+let timeBG = document.getElementById("innerclock");
 let onOff = false;
 
 control.onclick = function() {
   control.classList.toggle("red");
   clock.classList.toggle("onOff");
+  timeBG.classList.toggle("onOff");
   // setTimeout( () => clock.classList.toggle("onOff"), 500);
 };
 
