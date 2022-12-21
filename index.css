@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+:root {
+  --ch-dark-purple: #513252;
+  --ch-light-purple: #7A4069;
+  --ch-magenta: #CA4E79;
+  --ch-orange: #FFC18E;
+
+  --ch-blue: #7882A4;
+  --ch-brown: #C0A080;
+  --ch-grey: #D1D1D1;
+  --ch-white: #EFEFEF;
+
+  --ch-dark-blue: #228896;
+  --ch-black: #283739;
+  --ch-green: #A9C52F;
+  --ch-white-two: #F5F5F5;
+}
+
+
+
+body {
+/*   background: var(--ch-dark-purple); */
+/*   color: var(--ch-orange); */
+/*   background: var(--ch-blue); */
+/*   color: var(--ch-white); */
+  background: var(--ch-dark-blue);
+  color: var(--ch-green);
+  font-family: 'Press Start 2P', cursive;
+}
+
+.clock {
+  display: flex;
+  align-items: center;
+  border-radius: 25px;
+
+}
+
+.outerclock {
+  justify-content: space-evenly;
+  margin: 20vh auto 0; /* <-- centers clock | Left <--> Right */
+/*   background: var(--ch-light-purple); */
+  background: var(--ch-grey);
+/*   background: var(--ch-white-two); */
+  padding: 1.5rem 1.5rem;
+  max-width: calc(30% + 200px);
+
+}
+
+.innerclock {
+  align-items: center;
+  justify-content: center;
+/*   background: var(--ch-magenta); */
+/*   background: var(--ch-brown); */
+  background: var(--ch-black);
+  padding: 2rem 1rem;
+}
+
+.clockface {
+  font-size: 3rem;
+}
+.onOff {
+  color: var(--ch-black);
+}
+
+.screw {
+  height: 90px;
+  width: 90px;
+  margin: 0 1rem;
+  background-image: url("power-button.png");
+  background-color: var(--ch-green);
+  background-size: contain;
+  background-position: center;
+  border-radius: 50%;
+}
+.red {
+  background-color: var(--ch-magenta);
+}
+.pressed {
+  transform: scale(95%);
+}
+
+.attr {
+  position: absolute;
+  text-align: center;
+  width: 99%;
+  bottom: 10px;
+}
+
+#control {
+  -webkit-transition: transform 0.1s linear;
+  -moz-transition: transform 0.1s linear;
+  -ms-transition: transform 0.1s linear;
+  -o-transition: transform 0.1s linear;
+  transition: transform 0.1s linear;
+}
+.rotate {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
